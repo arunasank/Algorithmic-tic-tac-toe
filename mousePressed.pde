@@ -48,16 +48,18 @@ void mousePressed()
 /****************************************************************************************/
   
 /*The following loop starts the timer for the boolean flashing box*/
-  if(nextTurn != -1)
-  {
-    boolFlashingBox = true;
+//  if(nextTurn != -1)
+//  {
+//    boolFlashingBox = true;
+//    startTime = millis();
+//  }
+//  else
+//  {
+//    boolFlashingBox = true;
+//    startTime = millis();
+//  }
+boolFlashingBox = true;
     startTime = millis();
-  }
-  else
-  {
-    boolFlashingBox = true;
-    startTime = millis();
-  }
+
 /*****************************************************************************************/  
 }
-

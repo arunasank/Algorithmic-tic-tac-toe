@@ -23,7 +23,7 @@ void bigGridWon()
 {
    char value = 'X';
    int i,j;
-   PFont playerFont = loadFont("data/YJMT.vlw");
+   PFont playerFont = loadFont("MOC.vlw");
    if ((bigGrid[0][0] == bigGrid[0][1]) && (bigGrid[0][1] == bigGrid[0][2]))
    {
      if(bigGrid[0][0] == 'A')
@@ -119,33 +119,32 @@ void bigGridWon()
     switch(value)
     {
       case 'A':
-               fill(255,244,110);
+               fill(255,244,110, 130);
                rect(10,10,940,688);
                fill(0);
                textFont(playerFont,100);
                smooth();
-               text("Player 1 wins!",80,375);
+               text("Player 1 wins!",200,375);
                noLoop();
                break;
       case 'B':
-               fill(149,215,221);
+               fill(149,215,221, 130);
                rect(10,10,940,688);
                fill(0);
                textFont(playerFont,100);
                smooth();
-               text("Player 2 wins!",80,375);
+               text("Player 2 wins!",200,375);
                noLoop();
                break;
       case 'D':
-               fill(119,221,119);
+               fill(119,221,119, 130);
                rect(10,10,940,688);
                fill(0);
                textFont(playerFont,100);
                smooth();
-               text("DRAW!",280,375);
+               text("DRAW!",325,375);
                noLoop();
                break;
     }
 }
                               
-
